@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Paris</title>
+    <link href ="styles.css" rel="stylesheet">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="Paris" class="StyleParis"></div>
+    <div id="Info"></div>
+    <div id="Photo"></div> 
+    <script type="text/babel" src="Paris.jsx">
+    </script>
+    <script type="text/babel" src="Info.jsx">
+    </script>
+    <script type="text/babel" src="Photo.jsx">
+    </script>
+       <script type="text/babel">
+        "use strict"; 
+        const rootNode1 = document.getElementById("Paris");   
+        const root1 = ReactDOM.createRoot(rootNode1);
+        root1.render(
+            <React.StrictMode>
+                <Paris/>
+            </React.StrictMode>
+         );
+
+        const rootNode2 = document.getElementById("Info");   
+        const root2 = ReactDOM.createRoot(rootNode2);
+        root2.render(
+            <React.StrictMode>
+                <Info/>
+            </React.StrictMode>          
+         );
+
+        const rootNode3 = document.getElementById("Photo");   
+        const root3 = ReactDOM.createRoot(rootNode3);
+        root3.render(
+            <React.StrictMode>
+                <Photo/>
+            </React.StrictMode>         
+         );
+
+       </script>
+</body>
+</html>
